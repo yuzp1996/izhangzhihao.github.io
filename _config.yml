@@ -2,9 +2,10 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://izhangzhihao.github.io/
+url: https://yuzp1996.github.io/
 date_format: "ordinal"
 title: MyWay
+
 subtitle: "The pain you feel today is the strenghs you feel tomorrow"
 description: "鱼狗狗的个人博客"
 keywords: 于志鹏
@@ -19,6 +20,7 @@ side_bar_repo_limit: 5
 author: 于志鹏
 organization: ThoughtWorks
 # organization_url: 
+
 location: TangShan, ChinaTang
 email: yuzp1996@qq.com
 # ---------------- #
@@ -75,6 +77,7 @@ collections:
 #github_username: izhangzhihao
 #facebook_username: izhangzhihao
 #weibo_username: izhangzhihao
+
 #zhihu_username: 于志鹏
 #twitter_username: izhangzhihao
 
