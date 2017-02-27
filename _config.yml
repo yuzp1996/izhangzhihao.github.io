@@ -5,24 +5,24 @@ baseurl:
 url: https://yuzp1996.github.io/
 date_format: "ordinal"
 title: MyWay
-subtitle: "The pain you feel today is the strength you feel tomorrow"
+
+subtitle: "The pain you feel today is the strenghs you feel tomorrow"
 description: "鱼狗狗的个人博客"
 keywords: 于志鹏
-favicon: /favicon.ico
+favicon: /favicon12.ico
 timezone: Asia/Tangshan
 encoding: "utf-8"
 source_code: https://github.com/izhangzhihao/izhangzhihao.github.io
 side_bar_repo_limit: 5
-
 # ---------------- #
 #      Author      #
 # ---------------- #
 author: 于志鹏
 organization: ThoughtWorks
 # organization_url: 
-location: tangshan, China
-email: yuzp1996@qq.com
 
+location: TangShan, ChinaTang
+email: yuzp1996@qq.com
 # ---------------- #
 #    Navigation    #
 # ---------------- #
@@ -30,11 +30,9 @@ navs:
   -
     href: /
     label: 首页
-
   -
     href: /categories/
     label: 分类
-
   -
     href: /MySkillTree/
     label: 我的技能树
@@ -79,7 +77,8 @@ collections:
 #github_username: izhangzhihao
 #facebook_username: izhangzhihao
 #weibo_username: izhangzhihao
-#zhihu_username: 张志豪
+
+#zhihu_username: 于志鹏
 #twitter_username: izhangzhihao
 
 # ---------------- #
@@ -91,12 +90,11 @@ comments_provider: disqus
 # !!!Important!!! Please modify usernames below to yours
 duoshuo_username: yuzp1996
 disqus_username: yuzp1996
-
 # ---------------- #
 #    Analytics     #
 # ---------------- #
 google:
-    analytics_id: UA-82434482-1
+    analytics_id: 
 
 # ---------------- #
 #      Datas       #
