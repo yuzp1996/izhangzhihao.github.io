@@ -12,3 +12,5 @@ permalink: /about/
 
 付出创造价值
 
+The pain you feel today is the strength you feel tomorroe
+
