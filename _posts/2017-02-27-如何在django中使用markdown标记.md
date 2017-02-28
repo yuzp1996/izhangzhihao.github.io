@@ -37,6 +37,7 @@ def djangomarkdown(value):
    ``` 
     { % load djangomarkdown %  }
     {{ value|djangomarkdown   }}
+    
   ```
 3. 参考文档
 
