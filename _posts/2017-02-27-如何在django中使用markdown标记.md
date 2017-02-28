@@ -36,6 +36,7 @@ def djangomarkdown(value):
 
    ``` 
     { % load djangomarkdown %  }
+    
     {{ value|djangomarkdown   }}
     
   ```
