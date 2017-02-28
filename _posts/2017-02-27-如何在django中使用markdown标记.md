@@ -34,9 +34,10 @@ def djangomarkdown(value):
 
 很简单：
 
-    {% load djangomarkdown %}
-    {{ value|djangomarkdown }}
-
+   ``` 
+    { % load djangomarkdown %  }
+    {{ value|djangomarkdown   }}
+  ```
 3. 参考文档
 
 http://www.dominicrodger.com/django-markdown.html
