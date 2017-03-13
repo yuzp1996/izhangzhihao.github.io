@@ -1,0 +1,85 @@
+---
+layout: post
+title: Web Notifications
+description: how to notice with web program
+keywords: js
+---
+
+# Web Notifications
+
+## 如今在web程序上很多都需要消息提醒，比如最近做的订单提醒， 当来了新的订单就给出像桌面程序一样的消息提醒，这时客服不一定要在web网页上， 就能收到新的订单的信息
+
+##其实最开始我是拒绝这么做的，我认为在浏览器上显示新的窗口来提醒就很不错了，最后终于找到了解决方法，就是H5的新属性 桌面通知(Web Notifications) 
+
+
+function showMsgNotification(title, msg){
+//声明一个对象
+var Notification = window.Notification || window.mozNotification || window.webkitNotification;
+//alert(Notification.permission ) 查看是否授权
+//如果授权
+if (Notification && Notification.permission === "granted")
+{
+    var instance = new Notification( title,{body: msg, icon: "/webStatic/downloads/news.PNG", tag: 'same'});
+
+//        instance.tag="same";
+        instance.onclick = function () {
+        // Something to do
+        };
+//        instance.onerror = function () {
+//        // Something to do
+//        };
+        instance.onshow = function () {
+        // Something to do
+        // console.log(instance.close);
+        setTimeout(instance.close, 3000);
+        };
+//        instance.onclose = function () {
+//        // Something to do
+//        };
+}
+//没有授权
+
+else if(Notification && Notification.permission !== "denied")
+{
+    //requestPermission()方法来请求用户权限 基本上就用一次
+    Notification.requestPermission(
+      function (status) {
+        if (Notification.permission !== status)
+         {
+            Notification.permission = status;
+          }
+        // If the user said okay
+        if (status === "granted") {
+            var instance = new Notification(title, {body: msg,icon: "/webStatic/downloads/news.PNG",tag: 'same'});
+
+            instance.tag="same";
+
+            instance.onclick = function () {
+            // Something to do
+            };
+            instance.onerror = function () {
+            // Something to do
+            };
+            instance.onshow = function () {
+            // Something to do
+            setTimeout(instance.close, 3000);
+            };
+            instance.onclose = function () {
+            // Something to do
+            };
+
+        }
+        //If the user didn't say okay
+        else
+        {
+        return false
+        }
+    });
+}
+//其他
+else
+{
+return false;
+}
+
+}
