@@ -3,7 +3,7 @@ layout: post
 title: use markdown in django
 keywords: markdown+django
 ---
-##Django 曾经支持 Markdown，但在 1.6 版本中去掉了。虽然有第三方开发的如 Django-Markdown 等插件支持，但其实最简单的办法是自己直接做一个。同时也更便于测试、调试。
+##  Django 曾经支持 Markdown，但在 1.6 版本中去掉了。虽然有第三方开发的如 Django-Markdown 等插件支持，但其实最简单的办法是自己直接做一个。同时也更便于测试、调试。
 
   目前 Python 的 Markdown 库有两个，Markdown 和 Markdown2。其中 Markdown2 宣称其性能要高于 Markdown。在网站应用中，性能是很重要的参数。
 
@@ -14,7 +14,7 @@ keywords: markdown+django
 在 myproject/myapp 目录下，创建子目录 templagetags，内部添加如下两个文件：__init__.py, djangomarkdown.py
 
 编辑 djangomarkdown.py
-
+```
 ## -*- coding: utf-8 -*-
 
 import markdown2
@@ -33,7 +33,7 @@ def djangomarkdown(value):
                                         extras=["code-friendly"]
                                         )
                      )
-
+```
 如此，一个新的 Templage Tag "djangomarkdown" 已被创建。
 2. 在 Template 中使用
 
