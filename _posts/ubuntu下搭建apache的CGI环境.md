@@ -9,13 +9,13 @@ keywords: CGI
 
 ## 最近在学python 用到了CGI技术，这是一个比较底层的技术，还是很好玩的，就是配置上有些绕，最终在好的教程下算是成功搭建好了
 
-##  因为自己用的是nginx感觉很是难配， 所以索性改了apache,以下就是教程
+## 因为自己用的是nginx感觉很是难配， 所以索性改了apache,以下就是教程
 
 参考了两个大神的博客，地址如下
 https://zmobi.github.io/2016/08/31/python-cgi-setting-with-apache24.html
 http://blog.sina.com.cn/s/blog_4aa65a3f01013az9.html
 
-###  重点来了
+## 重点来了
 
 咸来说如何安装apache吧
 1. Ubuntu提供了强大的apt-get install命令，在终端输入：sudo apt-get install apache2    
