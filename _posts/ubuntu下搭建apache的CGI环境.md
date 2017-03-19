@@ -7,9 +7,7 @@ keywords: CGI
 
 # CGI for python
 
-## 最近在学python 用到了CGI技术，这是一个比较底层的技术，还是很好玩的，就是配置上有些绕，最终在好的教程下算是成功搭建好了
-
-## 因为自己用的是nginx感觉很是难配， 所以索性改了apache,以下就是教程
+## 最近在学python 用到了CGI技术，这是一个比较底层的技术，还是很好玩的，就是配置上有些绕，最终在好的教程下算是成功搭建好了因为自己用的是nginx感觉很是难配， 所以索性改了apache,以下就是教程
 
 参考了两个大神的博客，地址如下
 https://zmobi.github.io/2016/08/31/python-cgi-setting-with-apache24.html
@@ -32,7 +30,8 @@ http://blog.sina.com.cn/s/blog_4aa65a3f01013az9.html
 
 
 #  HERE WE GO
-Ubuntu系统
+
+前提是Ubuntu系统
 
 在ubuntu16.04环境下，使用sudo apt install apache安装，在内网中调试使用时，需要做的更改有：
 
