@@ -52,7 +52,7 @@ baby baby， 牛B 老子成功了
             img = Image.open(file)
             img.thumbnail((500,500),Image.ANTIALIAS)#对图片进行等比缩放
               img.save(rollPicturePath,"png")#保存图片
-             return HttpResponse("http://localhost:8000/webStatic/upload/" +ret+".jpg")
+             return HttpResponse("/webStatic/upload/" +ret+".jpg")
     except Exception as err:
         print err
 
@@ -88,7 +88,7 @@ baby baby， 牛B 老子成功了
 这里是html的代码：
 
 
-   				<div>
+   		<div>
                     <b style="float:left;">商品介绍:</b>
                         <div id="div1" style="width:170%;float:left;margin-left:5px;">
                         </div>
