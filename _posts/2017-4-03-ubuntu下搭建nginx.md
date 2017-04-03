@@ -207,4 +207,6 @@ djangochina_socket.xml，将它放在 /home/wen/myNote目录下：
     
 2.因为是成为生产环境 ，所以要把django的dubug关掉，并设置能够访问 host-什么里面改掉，【*】使他都可以访问
     
-3.看看error里的错误  亲爱的 吗的
+3.看看error里的错误  亲爱的 吗的  log里的错误信息很重要，要注意查看
+
+4.如果出现  **Server Internal error** 的错误， 可以先去查看一下端口占用  sudo lsof -i  查看uwsgi与nginx是不是都在运行，都在运行的话 ，那就重启两个服务，试试看
