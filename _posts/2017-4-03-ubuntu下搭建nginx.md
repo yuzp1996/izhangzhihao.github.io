@@ -1,4 +1,4 @@
-# ubuntu 下配置nginx与uwsgi #
+﻿# ubuntu 下配置nginx与uwsgi #
 #####  (做此工作前应该先保证自己的代码能够在django提供的服务器的环境下跑起来，在服务器上要装django，mysql,还有python-mysqldb(sudo apt-get install python-mysqldb)),          测试的话可以用django的服务器跑起来（python manage.py runserver 0.0.0.0:8000） 这样所有的公网里的电脑就可以通过8000端口访问你的网站   #####
 
 #### 配置工作
@@ -121,9 +121,18 @@ djangochina_socket.xml，将它放在 /home/wen/myNote目录下：
 
 5、 配置Nginx:
 
-我们假设你将会把Nginx程序日志放到你的目录下/var/log/error.log，(请确保该目录存在。)我们假设你的Django的static目录是/home/work/src/sites/testdjango1/testdjango/collectedstatic/，(要检查setting里面是否有static的路径，然后要把static综合起来用python的collocationstatic命令)
+我们假设你将会把Nginx程序日志放到你的目录下/var/log/error.log，(请确保该目录存在。)
+
+我们假设你的Django的static目录是/home/work/src/sites/testdjango1/testdjango/collectedstatic/，(要检查setting里面是否有static的路径，然后要把static综合起来用
+
+    python manage.py collectstatic
+
+[说明](http://www.ziqiangxuetang.com/django/django-static-files.html)
+
 我们假设你的域名是 127.0.0.1 （在调试时你可以设置成你的机器IP）
+
 我们假设你的域名端口是 80（在调试时你可以设置一些特殊端口如 8070）
+
 基于上面的假设，我们为conf/nginx.conf添加以下配置(命令locate nginx.conf可以找到conf文件的路径,当你执行 nginx -t 得时候，nginx会去测试你得配置文件得语法，并告诉你配置文件是否写得正确，同时也告诉了你配置文件得路径：)
 	(应该放在http{}，应该放在https的最后)
 	
