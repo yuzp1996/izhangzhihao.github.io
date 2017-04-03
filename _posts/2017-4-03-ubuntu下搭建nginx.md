@@ -127,6 +127,8 @@ djangochina_socket.xml，将它放在 /home/wen/myNote目录下：
 
     python manage.py collectstatic
 
+这一步在将网站部署到服务器上是很重要的一步，收集静态文件到指定的static文件下，这样在debug=false的时候才能寻找到正确的静态文件
+
 [说明](http://www.ziqiangxuetang.com/django/django-static-files.html)
 
 我们假设你的域名是 127.0.0.1 （在调试时你可以设置成你的机器IP）
