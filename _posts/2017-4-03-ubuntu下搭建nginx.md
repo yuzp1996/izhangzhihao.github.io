@@ -1,4 +1,8 @@
-﻿# ubuntu 下配置nginx与uwsgi #
+﻿---
+layout: post
+title: Nginx
+---
+# ubuntu 下配置nginx与uwsgi #
 
 #####  (做此工作前应该先保证自己的代码能够在django提供的服务器的环境下跑起来，在服务器上要装django，mysql,还有python-mysqldb(sudo apt-get install python-mysqldb)),          测试的话可以用django的服务器跑起来（python manage.py runserver 0.0.0.0:8000） 这样所有的公网里的电脑就可以通过8000端口访问你的网站   #####
 
