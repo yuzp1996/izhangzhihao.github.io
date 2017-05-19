@@ -1,9 +1,9 @@
-﻿---
-
-layout: post
-title: Nginx
-
 ---
+layout: post
+title: ubuntu build nginx
+keywords: ubuntu
+---
+
 
 # ubuntu 下配置nginx与uwsgi #
 
