@@ -1,4 +1,4 @@
-ubuntu安装
+### ubuntu安装
 参考网站http://blog.itpub.net/9697/viewspace-2127129/
 安装node.js的教程网站https://www.howtoing.com/install-latest-nodejs-npm-on-ubuntu/
 
