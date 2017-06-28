@@ -59,37 +59,3 @@ sudo usermod  -aG docker yuzhipeng
 
 查看相关进程
 sudo docker ps
-******
-10分钟小任务认识Docker
->docker version
-
->docker search tutorial
-
->docker pull michelesr/docker-tutorial 
-
->docker ps -l
-
->docker run michelesr/docker-tutorial  echo "hello world"
-
->docker run michelesr/docker-tutorial apt-get install -y ping
-
->docker ps -l
-
->docker commit 75e5a23d76be michelesr/ping
-
-> docker run michelesr/ping ping www.google.com
-
-ps只是看一些大体容器内容 inspect是看容器的详细内容
->docker ps 
-
->docker inspect ca9
-
->docker push michelesr/ping 
-****
-
-
-查看所有的镜像
->docker images 
-
-
-
