@@ -1,0 +1,74 @@
+## python 程序打包
+
+看到这个题目感觉可能会很难，其实真的做的时候发现其实打包的语句只有几条，很有意思呦
+
+首先假设有个hello.py 的文件要打包， 就要写一个相应的setup.py的文件，文件内容如下
+
+	from distutils.core import setup
+	setup(name='Hello',
+	      version='1.0',
+	      description='A simple example',
+	      author='Yugougou',
+	      py_modules=['hello'])
+	    
+当然该对应的还是好要对应好的，文件名称什么的。要把这个setup.py文件和hello.py 放在一个文件夹下面，这个很重要。
+
+先尝试语句
+> python setup.py
+
+他会有一些关于用法的输出，可以看一下， 需要帮助的话输入
+> python setup.py --help
+
+会有一些帮助信息
+
+然后可以运行 
+> python setup.py build
+
+这时候Distutils会创建一个名称为build的子目录，然后可以自己安装到自己的电脑上试试，
+> python setup.py install
+
+这时候你在交互器里就可以 import hello 了
+
+
+
+## 建立存档文件
+> python setup.py sdist
+
+这个时候会有一个dist子目录，里面应该有Hello-1.0.tar.gz的存档文件。还会生成一个MANIFEST.in文件,这个文件包括所有文件的列表
+
+生成之后可以将其发布给其他人，利用内置的setup.py脚本解包和安装。
+
+## 创建Windows安装程序或RPM包
+
+> python setup.py bdist --formats=wininst
+
+然后将dist/Hello-1.0.win32.exe复制到Windows系统上会看到一个比较基本的安装向导
+
+## 使用py2exe创建可执行程序
+
+py2exe作为Distutils的拓展，可以用来生成可执行的windows程序（.exe程序）
+py2exe包生成拥有GUI的可执行文件。
+
+创建setup.py文件
+
+    from distutils.core import setup
+    import py2exe
+    
+    setup(console=['hello.py'])
+
+可以使用
+> python setup.py py2exe
+
+生成hello.exe文件以及位于dist子目录中的其他一些文件，可以从命令行或者双击运行
+
+
+
+
+
+
+
+
+
+
+
+
