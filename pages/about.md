@@ -14,21 +14,31 @@ permalink: /about/
 
 The pain you feel today is the strength you feel tomorroe
 
-坚信
+## 坚信
 
-Continuous Learning
-你获得的回报跟你创造的价值正相关
-代码改变世界
-联系我
+* Continuous Learning
+* 你获得的回报跟你创造的价值正相关
+* 代码改变世界
 
-GitHub：@yuzp996
-博客：[{{ site.title }}]({{ site.url }})
+## 联系我
 
-Skill Keywords
+* GitHub：[@izhangzhihao](https://github.com/izhangzhihao)
+* LinkedIn：[@张志豪](https://cn.linkedin.com/in/izhangzhihao)
+* 博客：[{{ site.title }}]({{ site.url }})
+* 知乎: [@张志豪](https://www.zhihu.com/people/i-zhang-zhi-hao)
 
-Software Language Keywords
+## Skill Keywords
 
-{% for keyword in site.skill_language_keywords %} {{ keyword }} {% endfor %}
-Web Developer Keywords
+#### Software Language Keywords
+<div class="btn-inline">
+    {% for keyword in site.skill_language_keywords %}
+    <button class="btn btn-outline" type="button">{{ keyword }}</button>
+    {% endfor %}
+</div>
 
-{% for keyword in site.skill_web_app_keywords %} {{ keyword }} {% endfor %}
+#### Web Developer Keywords
+<div class="btn-inline">
+    {% for keyword in site.skill_web_app_keywords %}
+    <button class="btn btn-outline" type="button">{{ keyword }}</button>
+    {% endfor %}
+</div>
