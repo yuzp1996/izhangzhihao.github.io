@@ -11,23 +11,23 @@ permalink: /MySkillTree/
 
 * 大话设计模式
 
-2. Python基础教程 
+* Python基础教程 
 
-3. 浪潮之巅
+* 浪潮之巅
 
-4. Flask Web 开发
+* Flask Web 开发
 
-6. 代码整洁之道
+* 代码整洁之道
 
-7. 循序渐进学Docker
+* 循序渐进学Docker
 
-8. 锋利的Jquery
+* 锋利的Jquery
 
-9. Django Web开发指南
+* Django Web开发指南
 
-10. JavaScript权威指南
+* JavaScript权威指南
 
-11. Django_1.8.2_中文文档
+* Django_1.8.2_中文文档
 
 
 
