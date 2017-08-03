@@ -48,11 +48,11 @@ permalink: /MySkillTree/
 
 * 熟练使用HTML/CSS/JS,以及Jquery
 
-* 能够流畅阅读英文文档，查阅相应的资料
-
 * 熟练使用Mysql数据库，熟悉Redis数据库
 
 * 能够搭建Nginx服务器，保障网站的正常运行
+
+* 能够流畅阅读英文文档，查阅相应的资料
 
 * 熟练使用Git,团队工作无障碍
 
