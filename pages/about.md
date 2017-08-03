@@ -10,7 +10,7 @@ permalink: /about/
 
 我是于志鹏
 
-我相信自律给我自由
+我相信 自律给我自由
 
 Change the world with my word
 
