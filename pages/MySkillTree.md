@@ -9,7 +9,7 @@ permalink: /MySkillTree/
 
 ## 已读
 
-1. 大话设计模式
+* 大话设计模式
 
 2. Python基础教程 
 
@@ -42,15 +42,16 @@ permalink: /MySkillTree/
 
 # 技能
 
+精通Python,能熟练使用Python的Web框架如Django与Flask
+
 能够流畅阅读英文文档，查阅相应的资料
 
 熟练使用Git,团队工作无障碍
 
+
+
 能够搭建Nginx服务器，保障网站的正常运行
 
-
-
-## 已经完成
 
 
 
