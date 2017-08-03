@@ -59,9 +59,11 @@ permalink: /MySkillTree/
 
 ## 计划中/在学
 
-大数据Spark
+* Spark数据挖掘
 
-HTML5/CSS3
+* Python爬虫
+
+* HTML5/CSS3
 
 
 
