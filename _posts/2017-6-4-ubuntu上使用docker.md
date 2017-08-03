@@ -1,7 +1,7 @@
 今天要总结一下近期来使用学习docker的经验
 
 ****
-####Docker的安装
+#### Docker的安装
 >sudo apt-get update
 
 安装  这是用比较新的方法 也可以用
