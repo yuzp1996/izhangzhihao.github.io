@@ -42,19 +42,19 @@ permalink: /MySkillTree/
 
 # 技能
 
-熟练使用Linux系统开发
+* 熟练使用Linux系统开发
 
-精通Python,能熟练使用Python的Web框架如Django与Flask
+* 精通Python,能熟练使用Python的Web框架如Django与Flask
 
-熟练使用HTML/CSS/JS,以及Jquery
+* 熟练使用HTML/CSS/JS,以及Jquery
 
-能够流畅阅读英文文档，查阅相应的资料
+* 能够流畅阅读英文文档，查阅相应的资料
 
-熟练使用Mysql数据库，熟悉Redis数据库
+* 熟练使用Mysql数据库，熟悉Redis数据库
 
-能够搭建Nginx服务器，保障网站的正常运行
+* 能够搭建Nginx服务器，保障网站的正常运行
 
-熟练使用Git,团队工作无障碍
+* 熟练使用Git,团队工作无障碍
 
 
 ## 计划中/在学
