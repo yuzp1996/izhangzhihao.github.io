@@ -23,17 +23,19 @@ permalink: /MySkillTree/
 
 8.锋利的Jquery
 
-9. Django Web开发指南
+9.Django Web开发指南
 
 10.JavaScript权威指南
 
 11.Django_1.8.2_中文文档
 
 
-12.数据结构与算法+Python语言描述_裘宗燕.pdf
+
 ## 计划读/在读
 
 # 技能
+
+能够流畅阅读英文文档，查阅相应的资料
 
 ## 已经完成
 
@@ -41,7 +43,7 @@ permalink: /MySkillTree/
 
 ## 计划中/在学
 
-
+* 数据结构与算法+Python语言描述_裘宗燕.pdf
 
 
 
