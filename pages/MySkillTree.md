@@ -9,9 +9,13 @@ permalink: /MySkillTree/
 
 ## 已读
 
-1.	《大话设计模式》
+1.	大话设计模式
 
-2.   Python基础教程 
+2.  Python基础教程 
+
+3.  浪潮之巅
+
+4.  Flask Web 开发
 ## 计划读/在读
 
 # 技能
