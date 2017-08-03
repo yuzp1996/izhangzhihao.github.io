@@ -12,7 +12,7 @@ keywords: 于志鹏
 favicon: /favicon.ico
 timezone: Asia/Tangshan
 encoding: "utf-8"
-source_code: https://github.com/izhangzhihao/izhangzhihao.github.io
+source_code: https://github.com/yuzp1996/yuzp1996.github.io
 side_bar_repo_limit: 5
 # ---------------- #
 #      Author      #
@@ -71,7 +71,7 @@ collections:
 # ---------------- #
 #      Socials     #
 # ---------------- #
-#github_username: izhangzhihao
+github_username: yuzp1996
 #facebook_username: izhangzhihao
 #weibo_username: izhangzhihao
 
