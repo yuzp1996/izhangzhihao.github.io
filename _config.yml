@@ -96,5 +96,5 @@ google:
 # ---------------- #
 #      Datas       #
 # ---------------- #
-skill_language_keywords: [Python, Html, jquery]
-skill_web_app_keywords: [Django, nginx,Flask]
+skill_language_keywords: [Python, Html, jquery, javaScript]
+skill_web_app_keywords: [Django, nginx,Flask，Git, Mysql, Redis,Bootstrap]
