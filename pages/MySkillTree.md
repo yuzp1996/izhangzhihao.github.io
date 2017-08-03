@@ -16,6 +16,11 @@ permalink: /MySkillTree/
 3.  浪潮之巅
 
 4.  Flask Web 开发
+
+6. 代码整洁之道
+
+7. 循序渐进学Docker
+
 ## 计划读/在读
 
 # 技能
