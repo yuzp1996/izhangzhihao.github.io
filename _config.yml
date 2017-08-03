@@ -96,5 +96,5 @@ google:
 # ---------------- #
 #      Datas       #
 # ---------------- #
-skill_language_keywords: [Java, Scala , C Sharp]
-skill_web_app_keywords: [javaEE, Spring ,Spring MVC ,JPA , Hibernate , MyBatis, Shiro ,Redis ,Spring Data ,MySql ,ASP.NET ,ASP.NET MVC,Entity Framework]
+skill_language_keywords: [Python, Html, jquery]
+skill_web_app_keywords: [Django, nginx,Flask]
