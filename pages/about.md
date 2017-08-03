@@ -8,24 +8,22 @@ menu: 关于我
 permalink: /about/
 ---
 
-鱼狗狗
+我是于志鹏
 
-付出创造价值
+我相信自律给我自由
 
-The pain you feel today is the strength you feel tomorroe
+Change the world with my word
 
 ## 坚信
 
-* Continuous Learning
+* 持续长久的学习才是王道
 * 你获得的回报跟你创造的价值正相关
 * 代码改变世界
 
 ## 联系我
 
-* GitHub：[@izhangzhihao](https://github.com/izhangzhihao)
-* LinkedIn：[@张志豪](https://cn.linkedin.com/in/izhangzhihao)
-* 博客：[{{ site.title }}]({{ site.url }})
-* 知乎: [@张志豪](https://www.zhihu.com/people/i-zhang-zhi-hao)
+* GitHub：[@yuzp1996](https://github.com/yuzp1996)
+
 
 ## Skill Keywords
 
