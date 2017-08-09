@@ -9,25 +9,25 @@ permalink: /MySkillTree/
 
 ## 已读
 
-1. 大话设计模式
+* 大话设计模式
 
-2. Python基础教程 
+* Python基础教程 
 
-3. 浪潮之巅
+* 浪潮之巅
 
-4. Flask Web 开发
+* Flask Web 开发
 
-6. 代码整洁之道
+* 代码整洁之道
 
-7. 循序渐进学Docker
+* 循序渐进学Docker
 
-8. 锋利的Jquery
+* 锋利的Jquery
 
-9. Django Web开发指南
+* Django Web开发指南
 
-10. JavaScript权威指南
+* JavaScript权威指南
 
-11. Django_1.8.2_中文文档
+* Django_1.8.2_中文文档
 
 
 
@@ -42,21 +42,29 @@ permalink: /MySkillTree/
 
 # 技能
 
-能够流畅阅读英文文档，查阅相应的资料
+* 熟练使用Linux系统开发
 
-熟练使用Git,团队工作无障碍
+* 精通Python,能熟练使用Python的Web框架如Django与Flask
 
-能够搭建Nginx服务器，保障网站的正常运行
+* 熟练使用HTML/CSS/JS,以及Jquery
 
+* 熟练使用Mysql数据库，熟悉Redis数据库
 
+* 能够搭建Nginx服务器，保障网站的正常运行
 
-## 已经完成
+* 能够流畅阅读英文文档，查阅相应的资料
 
+* 熟练使用Git,团队工作无障碍
 
 
 ## 计划中/在学
 
-大数据Spark
+* Spark数据挖掘
+
+* Python爬虫
+
+* HTML5/CSS3
+
 
 
 

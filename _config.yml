@@ -12,13 +12,13 @@ keywords: 于志鹏
 favicon: /favicon.ico
 timezone: Asia/Tangshan
 encoding: "utf-8"
-source_code: https://github.com/izhangzhihao/izhangzhihao.github.io
+source_code: https://github.com/yuzp1996/yuzp1996.github.io
 side_bar_repo_limit: 5
 # ---------------- #
 #      Author      #
 # ---------------- #
 author: 于志鹏
-organization: ThoughtWorks
+organization: 华北理工大学智慧应用软件研发工作室
 # organization_url: 
 
 location: TangShan, China
@@ -71,7 +71,7 @@ collections:
 # ---------------- #
 #      Socials     #
 # ---------------- #
-#github_username: izhangzhihao
+github_username: yuzp1996
 #facebook_username: izhangzhihao
 #weibo_username: izhangzhihao
 
@@ -96,5 +96,5 @@ google:
 # ---------------- #
 #      Datas       #
 # ---------------- #
-skill_language_keywords: [Python, Html, jquery]
-skill_web_app_keywords: [Django, nginx,Flask]
+skill_language_keywords: [Python, Html, jquery, javaScript]
+skill_web_app_keywords: [Django, nginx, Flask, Git, Mysql, Redis,Bootstrap]

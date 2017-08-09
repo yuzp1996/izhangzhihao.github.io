@@ -8,9 +8,35 @@ menu: 关于我
 permalink: /about/
 ---
 
-鱼狗狗
+我是于志鹏
 
-付出创造价值
+我相信 自律给我自由
 
-The pain you feel today is the strength you feel tomorroe
+Change the world with my word
 
+## 坚信
+
+* 持续长久的学习才是王道
+* 你获得的回报跟你创造的价值正相关
+* 代码改变世界
+
+## 联系我
+
+* GitHub：[@yuzp1996](https://github.com/yuzp1996)
+
+
+## Skill Keywords
+
+#### Software Language Keywords
+<div class="btn-inline">
+    {% for keyword in site.skill_language_keywords %}
+    <button class="btn btn-outline" type="button">{{ keyword }}</button>
+    {% endfor %}
+</div>
+
+#### Web Developer Keywords
+<div class="btn-inline">
+    {% for keyword in site.skill_web_app_keywords %}
+    <button class="btn btn-outline" type="button">{{ keyword }}</button>
+    {% endfor %}
+</div>
