@@ -41,24 +41,28 @@ List.reverse() #不能赋值，只是对本身函数的反转
 
 List+List #增长列表，+ 只能增加列表，不能增加元素
 
+
+#转着圈圈的 打印出这个 矩阵
+
+# -*- coding:utf-8 -*-
 class Solution:
     # matrix类型为二维列表，需要返回列表
     def printMatrix(self, matrix):
         # write code here
         res = []
         while matrix:
-            res.extend(matrix.pop(0))
+            res.extend(matrix.pop(0))    #第一行拿出来
             if not matrix or not matrix[0]:
                 break
-            matrix = self.turn(matrix)
+            matrix = self.turn(matrix)    #旋转
         return res
     
-    def turn(self,List):
+    def turn(self,List):    #重新布置这个矩阵
         newList = []
         lenofy = len(List)
         lenofx = len(List[0])
         for i in range(lenofx):
-            tmplist=[]
+            tmplist=[]    #每一行
             for j in range(lenofy):
                 tmplist.append(List[j][i])
             newList.append(tmplist)
@@ -69,18 +73,45 @@ print 1, #保持不换行
 
 
 
+
+
+
+
+
+
+
+输入两个整数序列，第一个序列表示栈的压入顺序，请判断第二个序列是否为该栈的弹出顺序
+。假设压入栈的所有数字均不相等。例如序列1,2,3,4,5是某栈的压入顺序，序列4，5,3,2,1
+是该压栈序列对应的一个弹出序列，但4,3,5,1,2就不可能是该压栈序列的弹出序列。（注意
+：这两个序列的长度是相等的）
+
+
+相当于按照出栈顺序将入栈的数字弹出来，如果能弹空则说明这个入栈序列是按照所给的弹出的序列
 class Solution:
     def IsPopOrder(self, pushV, popV):
         # write code here
         stack = []
         for i in pushV:
             stack.append(i)
-            while len(stack) and stack[-1] == popV[0]:  #总要有个终止条件，也就是长度为0的时候
+            while len(stack) and stack[-1] == popV[0]:  #总要有个终止条件，也就是
+长度为0的时候
                 stack.pop(-1)
                 popV.pop(0)
         if len(stack) == 0:
             return True
         return False
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
