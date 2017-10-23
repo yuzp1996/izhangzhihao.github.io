@@ -1,4 +1,4 @@
-﻿#### 鱼先森的pythoncode
+### 鱼先森的pythoncode
 
 ```
 num=map(str,numbers)  #转换成字符
