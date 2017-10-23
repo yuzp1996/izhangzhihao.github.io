@@ -1,4 +1,4 @@
-﻿#### 鱼先森的pythoncode
+#### 鱼先森的pythoncode
 
 ```
 num=map(str,numbers)  #转换成字符
@@ -178,53 +178,6 @@ d.has_key('site')
 
 
 
-#反转数字
-class Solution(object):
-    def reverse(self, x):
-        """
-        :type x: int
-        :rtype: int
-        """
-        r = -cmp(0, x)
-        p = int(`r*x`[::-1])
-        return p*r*(p<2**32)
 
-
-#一般来说 来找数目多少的话 用字典是一个不错的选择
-一个整型数组里除了两个数字之外，其他的数字都出现了两次。请写程序找出这两个只出现一次的数字。
-
-# -*- coding:utf-8 -*-
-class Solution:
-    # 返回[a,b] 其中ab是出现一次的两个数字
-    def FindNumsAppearOnce(self, array):
-        # write code here
-        Dict = {}
-        for i in array:
-            try:
-                Dict[i] += 1
-            except:
-                Dict[i] = 1
-        List = [i for i in Dict if Dict[i] == 1]
-        return List[0],List[1]
-
-
-
-#  牛客集训
-
-小明很喜欢数学,有一天他在做数学作业时,要求计算出9~16的和,他马上就写出了正确答案是100。但是他并不满足于此,他在想究竟有多少种连续的正数
-序列的和为100(至少包括两个数)。没多久,他就得到另一组连续正数和为100的序列:18,19,20,21,22。现在把问题交给你,你能不能也很快的找出所有和为S的连续正数序列? Good Luck!
-# -*- coding:utf-8 -*-
-class Solution:
-    def FindContinuousSequence(self, tsum):
-        # write code here
-        Result = [];
-        for i in range(1,tsum/2+1):
-            for j in range(i, tsum/2+2):
-                SUM = (i+j)*(j-i+1)/2
-                if SUM>tsum:
-                    break
-                elif SUM == tsum:
-                    Result.append(range(i,j+1))
-        return Result
 
 ```
