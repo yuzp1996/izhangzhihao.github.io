@@ -173,4 +173,29 @@ return ' '.join(L)
 >>> sum([1,2,3,4])
 10
 
+
+
+
+
+
+Python 字典(Dictionary) items() 函数以列表返回可遍历的(键, 值) 元组数组。
+
+>>> import collections
+>>> C = collections.Counter([22,11,22,33,3,4,5,44,44,3,3,2,1])
+>>> print C
+Counter({3: 3, 44: 2, 22: 2, 33: 1, 2: 1, 4: 1, 5: 1, 1: 1, 11: 1})
+>>> for i,v in C.items():
+...     print i,v
+...
+33 1
+2 1
+3 3
+4 1
+5 1
+1 1
+11 1
+44 2
+22 2
+
+
 ```
