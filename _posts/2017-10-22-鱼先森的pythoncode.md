@@ -43,46 +43,9 @@ List.reverse() #不能赋值，只是对本身函数的反转
 
 List+List #增长列表，+ 只能增加列表，不能增加元素
 
-class Solution:
-    # matrix类型为二维列表，需要返回列表
-    def printMatrix(self, matrix):
-        # write code here
-        res = []
-        while matrix:
-            res.extend(matrix.pop(0))
-            if not matrix or not matrix[0]:
-                break
-            matrix = self.turn(matrix)
-        return res
-    
-    def turn(self,List):
-        newList = []
-        lenofy = len(List)
-        lenofx = len(List[0])
-        for i in range(lenofx):
-            tmplist=[]
-            for j in range(lenofy):
-                tmplist.append(List[j][i])
-            newList.append(tmplist)
-        newList.reverse()
-        return newList
+
 
 print 1, #保持不换行
-
-
-
-class Solution:
-    def IsPopOrder(self, pushV, popV):
-        # write code here
-        stack = []
-        for i in pushV:
-            stack.append(i)
-            while len(stack) and stack[-1] == popV[0]:  #总要有个终止条件，也就是长度为0的时候
-                stack.pop(-1)
-                popV.pop(0)
-        if len(stack) == 0:
-            return True
-        return False
 
 
 
@@ -180,43 +143,34 @@ d.has_key('site')
 
 
 
-
-
-#一般来说 来找数目多少的话 用字典是一个不错的选择
-一个整型数组里除了两个数字之外，其他的数字都出现了两次。请写程序找出这两个只出现一次的数字。
-
-# -*- coding:utf-8 -*-
-class Solution:
-    # 返回[a,b] 其中ab是出现一次的两个数字
-    def FindNumsAppearOnce(self, array):
-        # write code here
-        Dict = {}
-        for i in array:
-            try:
-                Dict[i] += 1
-            except:
-                Dict[i] = 1
-        List = [i for i in Dict if Dict[i] == 1]
-        return List[0],List[1]
+想要某个段的数字
+>>> range(2,23)
+[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]
 
 
 
-#  牛客集训
 
-小明很喜欢数学,有一天他在做数学作业时,要求计算出9~16的和,他马上就写出了正确答案是100。但是他并不满足于此,他在想究竟有多少种连续的正数
-序列的和为100(至少包括两个数)。没多久,他就得到另一组连续正数和为100的序列:18,19,20,21,22。现在把问题交给你,你能不能也很快的找出所有和为S的连续正数序列? Good Luck!
-# -*- coding:utf-8 -*-
-class Solution:
-    def FindContinuousSequence(self, tsum):
-        # write code here
-        Result = [];
-        for i in range(1,tsum/2+1):
-            for j in range(i, tsum/2+2):
-                SUM = (i+j)*(j-i+1)/2
-                if SUM>tsum:
-                    break
-                elif SUM == tsum:
-                    Result.append(range(i,j+1))
-        return Result
+
+
+>>> P = [2,3,17,5,4,3]
+>>> P.sort()
+>>> P
+[2, 3, 3, 4, 5, 17]
+>>> P.sort(reverse = True)
+>>> P
+[17, 5, 4, 3, 3, 2]
+
+
+
+按照空格分隔并旋转，将列表转成字符串
+L = s.split()
+L.reverse()
+return ' '.join(L)
+
+
+
+
+>>> sum([1,2,3,4])
+10
 
 ```
