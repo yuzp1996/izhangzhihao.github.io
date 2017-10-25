@@ -125,6 +125,12 @@ w 4
 >>>
 
 
+这个用列表表达式做的，感觉还可以
+>>> sorted([i+j+k  for i in 'abc'  for j in 'abc'  for k in 'abc' if  i!=j and j!=k and i!=k])
+
+
+
+
 
 sorted(list(set(map(''.join, itertools.permutations(ss)))))
 
