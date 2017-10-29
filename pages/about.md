@@ -12,7 +12,7 @@ permalink: /about/
 
 我相信 自律给我自由
 
-Change my world with my cord
+Change my world with my code
 
 ## 坚信
 
@@ -23,6 +23,8 @@ Change my world with my cord
 ## 联系我
 
 * GitHub：[@yuzp1996](https://github.com/yuzp1996)
+* mail: yuzp1996@qq.com
+* QQ: 1109791785
 
 
 ## Skill Keywords
