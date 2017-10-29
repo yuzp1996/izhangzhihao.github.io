@@ -13,6 +13,12 @@ permalink: /MySkillTree/
 
 * Python基础教程 
 
+* Python+Cookbook
+
+* 深入浅出Mysql
+
+* 算法图解
+
 * 浪潮之巅
 
 * Flask Web 开发
@@ -27,15 +33,15 @@ permalink: /MySkillTree/
 
 * JavaScript权威指南
 
-* Django_1.8.2_中文文档
+
 
 
 
 ## 计划读/在读
 
-* 数据结构与算法+Python语言描述
+* 图解Http
 
-* HTML5与CSS3权威指南
+* 了不起的nodeJs
 
 * 深入理解Nginx：模块开发与架构解析
 

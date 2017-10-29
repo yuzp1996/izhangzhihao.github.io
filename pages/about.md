@@ -12,7 +12,7 @@ permalink: /about/
 
 我相信 自律给我自由
 
-Change the world with my word
+Change my world with my cord
 
 ## 坚信
 
