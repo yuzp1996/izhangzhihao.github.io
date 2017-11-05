@@ -107,6 +107,12 @@ for( var i = 0; i < 10; i++){
     console.log( i );
 }
 console.log("循环结束")
+
+
+for (变量 in 对象)
+{
+    在此执行代码
+}
 ```
 
 #####   函数
@@ -119,3 +125,25 @@ function sum(a, b){
     return a+b ;
 }
 ```
+
+
+```
+A= {value:[1,2,3]}
+
+A.value
+[1, 2, 3]
+
+A.value.indexOf(1)
+
+0
+A.value.indexOf(2)
+1
+```
+
+```
+  var ch_small = 'a';
+  var str_small = [];
+  for(var i=0;i<26;i++){
+    str_small.push(String.fromCharCode(ch_small.charCodeAt(0)+i)) ;
+  }
+  ```
