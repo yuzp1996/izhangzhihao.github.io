@@ -3,6 +3,41 @@
 
 
 ```
+全排列
+>>> import itertools
+>>> P = itertools.permutations("abc")
+>>> P
+<itertools.permutations object at 0x02D27390>
+>>> for i in P:
+...     print i
+...
+('a', 'b', 'c')
+('a', 'c', 'b')
+('b', 'a', 'c')
+('b', 'c', 'a')
+('c', 'a', 'b')
+('c', 'b', 'a')
+
+这个用列表表达式做的，感觉还可以
+>>> sorted([i+j+k  for i in 'abc'  for j in 'abc'  for k in 'abc' if  i!=j and j!=k and i!=k])
+
+
+
+
+
+sorted(list(set(map(''.join, itertools.permutations(ss)))))
+
+map组成全排列的字符，set去重，list和sorted合作组成排序
+
+
+
+
+
+
+
+
+
+
 for (k,v) in  dict.items(): #遍历字典中的key与value
 
 for index，text in enumerate(list): #一般情况下对一个列表或数组既要遍历索引又要遍历元素时
@@ -114,33 +149,7 @@ w 4
 
 
 
-全排列
->>> import itertools
->>> P = itertools.permutations("abc")
->>> P
-<itertools.permutations object at 0x02D27390>
->>> for i in P:
-...     print i
-...
-('a', 'b', 'c')
-('a', 'c', 'b')
-('b', 'a', 'c')
-('b', 'c', 'a')
-('c', 'a', 'b')
-('c', 'b', 'a')
->>>
 
-
-这个用列表表达式做的，感觉还可以
->>> sorted([i+j+k  for i in 'abc'  for j in 'abc'  for k in 'abc' if  i!=j and j!=k and i!=k])
-
-
-
-
-
-sorted(list(set(map(''.join, itertools.permutations(ss)))))
-
-map组成全排列的字符，set去重，list和sorted合作组成排序
 
 
 
