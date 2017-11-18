@@ -11,4 +11,7 @@
 [10, 7, 4, 5, 9]
 ```
 
+
+```
 > return head + sum(tail) if tail else head  # if tail is True then return head+sum(tail), 
+```

@@ -3,6 +3,12 @@
 
 
 ```
+for (k,v) in  dict.items(): #遍历字典中的key与value
+
+for index，text in enumerate(list): #一般情况下对一个列表或数组既要遍历索引又要遍历元素时
+   print index ,text
+
+
 reverse()对列表进行反转，不能将反转结果赋值，因为这个是一个操作，只是将原来的列表进行反转
 
 
@@ -30,10 +36,7 @@ start = time.clock()
 elapsed = (time.clock() - start)
 
 
-for (k,v) in  dict.items(): #遍历字典中的key与value
 
-for index，text in enumerate(list): #一般情况下对一个列表或数组既要遍历索引又要遍历元素时
-   print index ,text
 
 for i in s:  #找出出现一次的字符及其位置
     if s.count(i)==1:
