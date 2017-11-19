@@ -3,6 +3,20 @@
 
 
 ```
+
+split() 分隔字符串
+
+>>> 'sdf dsfsd sfds'.split()
+['sdf', 'dsfsd', 'sfds']
+
+
+
+
+
+
+
+
+
 全排列
 >>> import itertools
 >>> P = itertools.permutations("abc")
@@ -26,13 +40,24 @@
 
 
 sorted(list(set(map(''.join, itertools.permutations(ss)))))
-
+这里的用法需要注意，map函数中的函数没有括号
 map组成全排列的字符，set去重，list和sorted合作组成排序
 
 
 
 
 
+计数模块
+
+>>> import collections
+>>> T = collections.Counter("qqwwssaaqqaawwss")
+>>> for i,v in T.items():
+...     print i,v
+...
+q 4
+a 4
+s 4
+w 4
 
 
 
@@ -131,17 +156,6 @@ popend.timeit(number=1000)
 
 
 
-计数模块
-
->>> import collections
->>> T = collections.Counter("qqwwssaaqqaawwss")
->>> for i,v in T.items():
-...     print i,v
-...
-q 4
-a 4
-s 4
-w 4
 
 
 

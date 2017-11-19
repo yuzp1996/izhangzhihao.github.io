@@ -146,4 +146,47 @@ A.value.indexOf(2)
   for(var i=0;i<26;i++){
     str_small.push(String.fromCharCode(ch_small.charCodeAt(0)+i)) ;
   }
-  ```
+```
+
+***
+调用并声明对象
+>const datbase = require('../main/datbase');
+***
+exports可以向外部文件暴露方法和属性，同过载单独js文件内写方法向外部暴露调用方法就能完成模块的定义。
+
+内部定义 
+
+module.exports.inputs = inputs();
+
+外部引用
+const datbase = require('../main/datbase');
+var inputs = datbase.inputs;
+
+***
+js中的for of 循环：
+
+for (var i of "yzuhpeng"){
+console.log(i)
+}
+y
+z
+u
+h
+p
+e
+n
+g
+
+for (var i in "yzuhpeng"){
+console.log(i)
+}
+0
+1
+2
+3
+4
+5
+6
+7
+
+
