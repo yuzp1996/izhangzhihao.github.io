@@ -10,13 +10,6 @@ split() 分隔字符串
 ['sdf', 'dsfsd', 'sfds']
 
 
-
-
-
-
-
-
-
 全排列
 >>> import itertools
 >>> P = itertools.permutations("abc")
@@ -147,25 +140,7 @@ print(t1.timeit(number=10000),"seconds")
 x = list(range(2000000))
 popend = timeit.Timer("x.pop()","from __main__ import x")
 popend.timeit(number=1000)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
 字典判断值或键的存在
