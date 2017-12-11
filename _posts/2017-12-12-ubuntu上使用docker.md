@@ -11,8 +11,9 @@
 
 > sudo apt-get install curl
 
-> curl -sSL  https://get.docker.com/  | sh
-
+```
+ curl -sSL  https://get.docker.com/  | sh
+```
 下载完毕启动Docker的守护进程
 
 >sudo service docker start
@@ -41,6 +42,9 @@
 
 > sudo  docker run --name MyWordPress  --link db:mysql -p 8080:80 -d wordpress 
 
+
+
+
 通过ifconfig查看本机的IP地址，在本机地址后加上端口号8080,会有惊喜。简直不能更爽
 
 这个我在京东云上部署了一下，感觉用起来很快，部署效果非常好，比之前部署项目快的过，真的是几条命令就可以跑起来服务，厉害了  [访问](http://116.196.76.223:8079/)
@@ -49,26 +53,36 @@
 * 搭建Gitlab服务
 首先启动postgresql
 
-```sudo docker run --name gitlab-postgresql -d --env 'DB_NAME=gitlabhq_production' --env 'DB_USER=gitlab' --env 'DB_PASS=password' sameersbn/postgresql:9.4-12
 ```
+sudo docker run --name gitlab-postgresql -d --env 'DB_NAME=gitlabhq_production' --env 'DB_USER=gitlab' --env 'DB_PASS=password' sameersbn/postgresql:9.4-12
+
+```
+
 然后启动redis
+
 ```
 sudo docker run  --name gitlab-redis -d sameersbn/redis:latest 
 ```
 最后启动gitlab
 
-```sudo docker run --name gitlab -d --link gitlab-postgresql:postgresql --link gitlab-redis:redisio --publish 10022:22 --publish 10080:80 --env  'GITLAB_PORT=10080' --env 'GITLAB_SSH_PORT=10022' --env 'GITLAB_SECRETS_DB_KEY_BASE=long-and-random-alpha-numeric-string' sameersbn/gitlab:8.4.4
+```
+sudo docker run --name gitlab -d --link gitlab-postgresql:postgresql --link gitlab-redis:redisio --publish 10022:22 --publish 10080:80 --env  'GITLAB_PORT=10080' --env 'GITLAB_SSH_PORT=10022' --env 'GITLAB_SECRETS_DB_KEY_BASE=long-and-random-alpha-numeric-string' sameersbn/gitlab:8.4.4
+
 ```
 后来就可以访问端口10080即可进入gitlab，确实是太好用了，这时候用户名为root，密码是5iveL!fe   连接（如果可用） [点击进入](http://116.196.76.223:10080)
 
 * 项目管理系统 Redmine
 要使用saneersbn/redmine的镜像。两条指令
-```sudo docker run --name=postgresql-redmine -d --env='DB_NAME=redmine_production' --env='DB_USER=redmine' --env='DB_PASS=password' sameersbn/postgresql:9.4-12
+```
+
+sudo docker run --name=postgresql-redmine -d --env='DB_NAME=redmine_production' --env='DB_USER=redmine' --env='DB_PASS=password' sameersbn/postgresql:9.4-12
 
  docker run --name=redmine -d --link=postgresql-redmine:postgresql --publish=10083:80 --env='REDMINE_PORT=10083' sameersbn/redmine:3.2.0-4
+
 ```
 
 **** 
+
 10分钟小任务认识Docker
 
 版本号
@@ -109,10 +123,12 @@ sudo docker run  --name gitlab-redis -d sameersbn/redis:latest
 >docker images  查询本机的镜像列表
 
 查询结果中有
+
 ```
 REPOSITORY                                                                      TAG                 IMAGE ID            CREATED             SIZE
 learn/ping                                                                      latest              714c84471b9f        11 minutes ago      139MB
 ```
+
 所以把镜像推送到Docker官仓
 
 > docker push learn/ping
@@ -138,6 +154,7 @@ ps只是看一些大体容器内容 inspect是看容器的详细内容
 >docker push michelesr/ping 
 
 ****
+
 #### docker基础概念与常用命令
 1.仓库、镜像、容器
 
