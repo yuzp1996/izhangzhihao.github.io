@@ -98,3 +98,5 @@ google:
 # ---------------- #
 skill_language_keywords: [Python, Html, jquery, javaScript]
 skill_web_app_keywords: [Django, nginx, Flask, Git, Mysql, Redis,Bootstrap]
+
+theme: jekyll-theme-merlot
