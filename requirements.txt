@@ -1,0 +1,8 @@
+alembic==0.8.6
+bleach==1.4.3
+click==6.6
+dominate==2.2.1
+Flask==0.11.1
+Flask-Bootstrap==3.3.6.0
+Flask-Login==0.3.2
+Flask-Migrate==1.8.1
